@@ -348,7 +348,7 @@ function App() {
                 >
                   Discover the Beauty of
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600 ml-2">
-                    Zimbabwean Languages
+                    Learning Languages
                   </span>
                 </motion.h2>
                 <motion.p
@@ -357,7 +357,7 @@ function App() {
                   transition={{ duration: 0.5, delay: 0.7 }}
                   className="mt-4 text-gray-600"
                 >
-                  Translate between languages, learn new words, and connect with Zimbabwe's rich linguistic heritage.
+                  Translate between languages, learn new words, and connect with Zimbabwe's and the Global rich linguistic heritages.
                 </motion.p>
 
                 <motion.div
@@ -436,7 +436,7 @@ function App() {
             <div>
               <h4 className="font-medium text-gray-900 mb-4">About Us</h4>
               <p className="text-sm text-gray-600">
-                Dzidza is a language learning platform dedicated to helping Zimbabweans learn and translate between different languages, with a special focus on local languages.
+                Dzidza language is a language learning platform dedicated to helping Zimbabweans and others learn and translate between different languages, with a special focus on local languages.
               </p>
             </div>
             <div>
