@@ -1,6 +1,6 @@
 "use client"
 
-import type React from "react"
+//import type React from "react"
 import { useState, useEffect, type ReactNode } from "react"
 import { motion } from "framer-motion"
 import { Globe, BookOpen, MessageCircle, Sparkles, Languages, ArrowRightLeft, Volume2, Copy, Check } from "lucide-react"
@@ -21,24 +21,6 @@ const languages: Language[] = [
   { code: 'ch', name: 'Chewa', isUpcoming: true },
 ]
 
-const learningResources = {
-  en: [
-    { name: 'British Council Zimbabwe', type: 'institution', location: 'Harare', description: 'English language courses and certification' },
-    { name: 'Duolingo', type: 'online', url: 'https://www.duolingo.com', description: 'Free online English learning platform' },
-  ],
-  de: [
-    { name: 'Goethe-Institut Zimbabwe', type: 'institution', location: 'Harare', description: 'German language courses and cultural programs' },
-    { name: 'Deutsche Welle', type: 'online', url: 'https://www.dw.com', description: 'Free German learning resources' },
-  ],
-  es: [
-    { name: 'Instituto Cervantes', type: 'institution', location: 'Harare', description: 'Spanish language and cultural center' },
-    { name: 'SpanishDict', type: 'online', url: 'https://www.spanishdict.com', description: 'Comprehensive Spanish learning resources' },
-  ],
-  ru: [
-    { name: 'Russian Cultural Center', type: 'institution', location: 'Harare', description: 'Russian language and cultural programs' },
-    { name: 'RT Learn Russian', type: 'online', url: 'https://learnrussian.rt.com', description: 'Free Russian language learning platform' },
-  ],
-}
 
 // LanguageBubble Component
 function LanguageBubble({ text, x, y, color }: { text: string; x: number; y: number; color: string }) {
@@ -257,13 +239,13 @@ function TranslationForm() {
 // Main App Component
 function App() {
   const [mounted, setMounted] = useState(false)
-  const [sourceText, setSourceText] = useState("")
+  {/*const [sourceText, setSourceText] = useState("")
   const [sourceLanguage, setSourceLanguage] = useState("en")
   const [targetLanguage, setTargetLanguage] = useState("de")
   const [translatedText, setTranslatedText] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
-  const [copied, setCopied] = useState(false)
+  const [copied, setCopied] = useState(false)*/}
 
   useEffect(() => {
     setMounted(true)
@@ -313,7 +295,7 @@ function App() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex gap-6"
             >
-              {["Learn", "Translate", "Resources", "Community"].map((item, i) => (
+              {["Learn", "Translate", "Resources", "Community"].map((item) => (
                 <motion.a
                   key={item}
                   href="#"
